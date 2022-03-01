@@ -1,0 +1,15 @@
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  drun-display-format: "{name}";
+  font: "Recursive Sans Casual Static Medium 13";
+  modi: "window,run,drun";
+  show-icons: true;
+  /* In case it doesn't automatically shows the papirus theme icons*/
+  /* icon-theme: "Papirus"; */
+}
+
+@theme "mytheme.rasi"
+/* Everthing in one file */
+/*In case you want to use different file for theme change the upper path to the path of the file and put everything below in there */
+

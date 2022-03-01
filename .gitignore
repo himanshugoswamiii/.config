@@ -1,0 +1,58 @@
+# ignore all logs
+*.log
+
+# Ignore all zips
+*.zip
+
+
+catfish/
+code-oss/
+Code - OSS/
+Electron/
+htop/
+kdeconnect/
+Kvantum/
+libreoffice/
+Mousepad/
+neofetch/
+nvim/
+warpinator/
+yay/
+Thunar/
+viewnior/
+transmission/
+autostart/
+dconf/
+falkon/
+fontforge/
+gtk-2.0/
+inkscape/
+manjaro/
+nitrogen/
+nnn/
+obs-studio/
+obsidian/
+onlyoffice/
+pamac/
+pulse/
+qpdfview/
+qt5ct/
+scripts/
+vlc/
+volumeicon/
+xfce4/
+xournalpp/
+
+# Keeping settings.json out of gitignore
+VSCodium/*
+!VSCodium/User
+VSCodium/User/*
+!VSCodium/User/settings.json
+
+# Files
+QtProject.conf
+manjaro-hello.json
+mimeapps.list
+user-dirs.dirs
+user-dirs.locale
+

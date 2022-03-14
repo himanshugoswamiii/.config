@@ -1,9 +1,16 @@
 {
     "workbench.colorTheme": "Monokai",
     "editor.fontFamily": "'RecMonoCasual Nerd Font','Droid Sans Mono', 'monospace', monospace",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     
     // ----- Vim Keybinings -----
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    // Default for use control keys is true
+    // Keep it true otherwise it's causing problems with vim keybindings
+    "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
         {
             // Use kj for Esc
@@ -14,32 +21,43 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         // Row to to start and End
         {
-        "before": ["H"],
-        "after": ["^"]
+            "before": ["H"],
+            "after": ["^"]
         },
         {
-        "before": ["L"],
-        "after": ["$"]
+            "before": ["L"],
+            "after": ["$"]
         },
 
         // Split Navigation
         {
-        "before": ["<C-j>"],
-        "after": ["<C-w>","j"]
+            "before": ["<C-j>"],
+            "after": ["<C-w>","j"]
         },
         {
-        "before": ["<C-k>"],
-        "after": ["<C-w>","k"]
+            "before": ["<C-k>"],
+            "after": ["<C-w>","k"]
         },
         {
-        "before": ["<C-l>"],
-        "after": ["<C-w>","l"]
+            "before": ["<C-l>"],
+            "after": ["<C-w>","l"]
         },
         {
-        "before": ["<C-h>"],
-        "after": ["<C-w>","h"]
+            "before": ["<C-h>"],
+            "after": ["<C-w>","h"]
+        },
+
+        // Tabs
+        {
+            "before":["t"],
+            "commands": [":tabn"]
+        },
+        {
+            "before":["T"],
+            "commands": [":tabp"]
         }
 
-    ]
+    ],
+    "window.zoomLevel": 1
 }
 

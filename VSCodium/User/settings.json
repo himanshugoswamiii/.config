@@ -11,6 +11,12 @@
     // Default for use control keys is true
     // Keep it true otherwise it's causing problems with vim keybindings
     "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+
     "vim.insertModeKeyBindings": [
         {
             // Use kj for Esc
@@ -18,6 +24,7 @@
             "after": ["<Esc>"]
         }
     ],
+
     "vim.normalModeKeyBindingsNonRecursive": [
         // Row to to start and End
         {
@@ -49,14 +56,32 @@
 
         // Tabs
         {
-            "before":["t"],
+            "before": ["t"],
             "commands": [":tabn"]
         },
         {
-            "before":["T"],
+            "before": ["T"],
             "commands": [":tabp"]
-        }
+        },
 
+        // File Explorer
+        {
+            "before": ["<leader>","e"],
+            "commands": ["revealInExplorer"]
+        },
+
+
+    ],
+
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [">"],
+            "after": [">","g","v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<","g","v"]
+        }
     ],
     "window.zoomLevel": 1
 }

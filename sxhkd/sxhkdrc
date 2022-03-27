@@ -5,6 +5,20 @@ super + o
 super + w
   rofi-wifi
 
+# Brightness Control
+XF86MonBrightnessUp
+  brightnessctl s 300+ && notify-send -u low "Brightness +"
+XF86MonBrightnessDown
+  brightnessctl s 300- && notify-send -u low "Brightness -"
+
+# Volume Control
+XF86AudioRaiseVolume
+  amixer -D pulse sset Master 5%+ && notify-send -u low "Volume Increased"
+XF86AudioLowerVolume
+  amixer -D pulse sset Master 5%- && notify-send -u low "Volume Decreased"
+XF86AudioMute
+  amixer -D pulse sset Master toggle && notify-send -u low "Volume Muted"
+
 # maim Screenshot Utility
 # Take screenshot by selection then save it and copy it to the clipboard and sent a notification
 super + s

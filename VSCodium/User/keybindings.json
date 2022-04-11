@@ -27,5 +27,22 @@
         "command": "-selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
+
+    // For split navigation
+    {
+        "key": "ctrl+h",
+        "command" : "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command" : "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command" : "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command" : "workbench.action.navigateDown"
+    },
 ]
-// 

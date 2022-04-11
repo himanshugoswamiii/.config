@@ -17,7 +17,8 @@
         "<C-f>": false
     },
 
-    "vim.insertModeKeyBindings": [
+    // NonRecursive : because i want to use Esc as well as kj 
+    "vim.insertModeKeyBindingsNonRecursive": [
         {
             // Use kj for Esc
             "before": ["k", "j"],
@@ -36,23 +37,8 @@
             "after": ["$"]
         },
 
-        // Split Navigation
-        {
-            "before": ["<C-j>"],
-            "after": ["<C-w>","j"]
-        },
-        {
-            "before": ["<C-k>"],
-            "after": ["<C-w>","k"]
-        },
-        {
-            "before": ["<C-l>"],
-            "after": ["<C-w>","l"]
-        },
-        {
-            "before": ["<C-h>"],
-            "after": ["<C-w>","h"]
-        },
+        // Split Navigation -> I've defined split naviation in keybindings.json because that works better
+
 
         // Tabs
         {
@@ -83,6 +69,7 @@
             "after": ["<","g","v"]
         }
     ],
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "extensions.autoUpdate": "onlyEnabledExtensions"
 }
 

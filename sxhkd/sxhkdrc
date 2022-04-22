@@ -2,8 +2,8 @@
 super + o
   rofi -show drun
 
-super + w
-  rofi-wifi
+#super + w 
+#  rofi-wifi
 
 # Brightness Control
 XF86MonBrightnessUp

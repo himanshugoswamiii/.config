@@ -70,6 +70,12 @@
         }
     ],
     "window.zoomLevel": 1,
-    "extensions.autoUpdate": "onlyEnabledExtensions"
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    // Files that will be exclude from File Explorer
+    "files.exclude": {
+        "**/*.class": true
+    },
+    "editor.autoClosingDelete": "never",
+    "explorer.confirmDragAndDrop": false
 }
 

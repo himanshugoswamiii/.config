@@ -42,6 +42,7 @@ vlc/
 volumeicon/
 xfce4/
 xournalpp/
+pulseaudio-ctl/
 
 # Keeping settings.json out of gitignore
 VSCodium/*
@@ -54,6 +55,7 @@ VSCodium/User/*
 QtProject.conf
 manjaro-hello.json
 mimeapps.list
+pavucontrol.ini
 user-dirs.dirs
 user-dirs.locale
 

@@ -14,7 +14,8 @@
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-a>": false,
-        "<C-f>": false
+        "<C-f>": false,
+        "<C-b>": false // visible buffer scrolls up by one page
     },
 
     // NonRecursive : because i want to use Esc as well as kj 
@@ -50,10 +51,10 @@
             "commands": [":tabp"]
         },
 
-        // File Explorer
+        // File Explorer (toggle sidebar)
         {
             "before": ["<leader>","e"],
-            "commands": ["revealInExplorer"]
+            "commands": ["workbench.action.toggleSidebarVisibility"]
         },
 
 
@@ -76,6 +77,7 @@
         "**/*.class": true
     },
     "editor.autoClosingDelete": "never",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "editor.suggestSelection": "recentlyUsed"
 }
 

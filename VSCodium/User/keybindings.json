@@ -1,5 +1,8 @@
 // Place your key bindings in this file to override the defaults
 // Same as my neovim configs
+// Note: Do not put keybindings in keybindings.json which satisfy :
+    // have space in them
+    // have only one critera : vim.mode=='Normal' and don't start with Ctrl/Alt
 [
     {
         "key": "shift+k",

@@ -56,7 +56,11 @@
             "before": ["<leader>","e"],
             "commands": ["workbench.action.toggleSidebarVisibility"]
         },
-
+        // Create a new file
+        {
+            "before": ["<leader>","n"],
+            "commands": ["explorer.newFile"]
+        }
 
     ],
 
@@ -78,6 +82,12 @@
     },
     "editor.autoClosingDelete": "never",
     "explorer.confirmDragAndDrop": false,
-    "editor.suggestSelection": "recentlyUsed"
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.quickSuggestions": {
+
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    }
 }
 

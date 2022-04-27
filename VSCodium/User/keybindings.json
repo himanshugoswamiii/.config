@@ -57,5 +57,23 @@
         "key": "ctrl+down",
         "command": "workbench.action.decreaseViewSize",
         "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.nextEditor",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-workbench.action.previousEditor"
     }
 ]

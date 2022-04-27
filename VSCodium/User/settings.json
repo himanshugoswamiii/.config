@@ -41,15 +41,7 @@
         // Split Navigation -> I've defined split naviation in keybindings.json because that works better
 
 
-        // Tabs
-        {
-            "before": ["t"],
-            "commands": [":tabn"]
-        },
-        {
-            "before": ["T"],
-            "commands": [":tabp"]
-        },
+        // Tabs -- removed t to :tabn and T to :tabp
 
         // File Explorer (toggle sidebar)
         {

@@ -59,7 +59,7 @@
         "when": "vim.mode == 'Normal'"
     },
     {
-        "key": "tab",
+        "key": "alt+l",
         "command": "workbench.action.nextEditor",
         "when": "vim.mode == 'Normal'"
     },
@@ -68,7 +68,7 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "shift+tab",
+        "key": "alt+h",
         "command": "workbench.action.previousEditor",
         "when": "vim.mode == 'Normal'"
     },

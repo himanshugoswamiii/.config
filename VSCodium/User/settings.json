@@ -80,6 +80,7 @@
         "other": "on",
         "comments": "off",
         "strings": "on"
-    }
+    },
+    "terminal.integrated.copyOnSelection": true
 }
 

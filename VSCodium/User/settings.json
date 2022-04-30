@@ -81,6 +81,7 @@
         "comments": "off",
         "strings": "on"
     },
-    "terminal.integrated.copyOnSelection": true
+    "terminal.integrated.copyOnSelection": true,
+    "editor.tabSize": 2
 }
 

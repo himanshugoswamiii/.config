@@ -66,7 +66,6 @@
             "after": ["<","g","v"]
         }
     ],
-    "window.zoomLevel": 1,
     "extensions.autoUpdate": "onlyEnabledExtensions",
     // Files that will be exclude from File Explorer
     "files.exclude": {
@@ -81,6 +80,7 @@
         "comments": "off",
         "strings": "on"
     },
-    "terminal.integrated.copyOnSelection": true
+    "terminal.integrated.copyOnSelection": true,
+    "window.zoomLevel": 1
 }
 

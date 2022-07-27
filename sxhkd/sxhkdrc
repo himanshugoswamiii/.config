@@ -21,7 +21,7 @@ XF86AudioMute
 
 # maim Screenshot Utility
 # Take screenshot by selection then save it and copy it to the clipboard and sent a notification
-super + s
+alt + super + s
     maim -s | tee ~/Pictures/Screenshots/$(date +%s).png | xclip -selection clipboard -t image/png && notify-send "Screenshot has been saved in /Pictures/Screenshots" -u low
 
 super + shift + s

@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Monokai",
     "editor.fontFamily": "'RecMonoCasual Nerd Font','Droid Sans Mono', 'monospace', monospace",
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     
     // ----- Vim Keybinings -----
     "vim.easymotion": true,

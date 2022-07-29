@@ -66,7 +66,7 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile,
-    awful.layout.suit.floating,
+    -- awful.layout.suit.floating,
     -- awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.top,
@@ -204,7 +204,15 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({
+    -- This function provide rounded corners to the wibar
+      --[[ shape=function (cr,w,h)
+          gears.shape.rounded_rect(cr,w,h,6)
+      end, ]]
+      position = "top",
+      screen = s,
+      width = 1200, -- width of the wibar
+    })
 
     -- Add widgets to the wibox
     s.mywibox:setup {

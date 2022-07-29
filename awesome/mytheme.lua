@@ -13,13 +13,15 @@ local theme = {}
 
 theme.font          = "RecMonoCasual Nerd Font ,12"
 
-theme.bg_normal     = "#222222"
+-- theme.bg_normal     = "#222222"
+theme.bg_normal     = "#0e030d"
 theme.bg_focus      = "#535d6c"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
+--theme.fg_normal     = "#aaaaaa"
+theme.fg_normal     = "#9b80df"
 theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
@@ -30,6 +32,8 @@ theme.border_width  = dpi(1)
 theme.border_normal = "#000000"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
+
+--theme.taglist_bg_focus    = "#FE4E20"
 
 -- There are other variable sets
 -- overriding the default one when
@@ -64,7 +68,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = themes_path.."default/submenu.png"
 theme.menu_height = dpi(15)
-theme.menu_width  = dpi(100)
+theme.menu_width  = dpi(150)
 
 -- You can add as many variables as
 -- you wish and access them by using

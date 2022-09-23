@@ -2,6 +2,7 @@
     "workbench.colorTheme": "Monokai",
     "editor.fontFamily": "'RecMonoCasual Nerd Font','Droid Sans Mono', 'monospace', monospace",
     "editor.fontSize": 14,
+    "notebook.markup.fontSize": 13,
     
     // ----- Vim Keybinings -----
     "vim.easymotion": true,
@@ -38,6 +39,16 @@
             "after": ["$"]
         },
 
+        // Sync Vscode and vim Undo and redo
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        } ,
+        {
+            "before": ["C-r"],
+            "commands": ["redo"]
+        },
+
         // Split Navigation -> I've defined split naviation in keybindings.json because that works better
 
 
@@ -71,7 +82,7 @@
     "files.exclude": {
         "**/*.class": true
     },
-    "editor.autoClosingDelete": "never",
+    "editor.autoClosingDelete": "auto",
     "explorer.confirmDragAndDrop": false,
     "editor.suggestSelection": "recentlyUsed",
     "editor.quickSuggestions": {

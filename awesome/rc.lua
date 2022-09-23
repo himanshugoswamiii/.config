@@ -66,9 +66,9 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile,
-    -- awful.layout.suit.floating,
     -- awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
+    awful.layout.suit.floating,
     -- awful.layout.suit.tile.top,
     -- awful.layout.suit.fair,
     -- awful.layout.suit.fair.horizontal,
@@ -107,15 +107,6 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
 
--- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
-
--- Calendar widget
--- calendarWidget=awful.widget.calender_popup.month()
-
--- {{{ Wibar
--- Create a textclock widget
-mytextclock = wibox.widget.textclock()
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -169,6 +160,18 @@ local function set_wallpaper(s)
     end
 end
 
+--   WIDGETS ON RIGHT SIDE OF THE BAR
+
+-- Keyboard map indicator and switcher
+mykeyboardlayout = awful.widget.keyboardlayout()
+
+-- Calendar widget
+--calendarWidget=awful.widget.calender_popup.month()
+
+-- {{{ Wibar
+-- Create a textclock widget
+mytextclock = wibox.widget.textclock()
+
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
@@ -214,6 +217,8 @@ awful.screen.connect_for_each_screen(function(s)
       width = 1200, -- width of the wibar
     })
 
+
+
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -226,9 +231,10 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
+            -- mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
+            --calendarWidget,
             s.mylayoutbox,
         },
     }
@@ -514,9 +520,10 @@ awful.rules.rules = {
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
+    { rule_any = { class = {"firefox"} },
+      properties = { screen = 1, tag = "" } },
 }
+
 -- }}}
 
 -- {{{ Signals

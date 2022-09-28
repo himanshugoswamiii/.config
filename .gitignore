@@ -5,6 +5,7 @@
 *.zip
 
 
+chromium/
 catfish/
 code-oss/
 Code - OSS/
@@ -25,6 +26,7 @@ transmission/
 autostart/
 dconf/
 falkon/
+fontconfig/
 fontforge/
 gtk-2.0/
 inkscape/
@@ -38,6 +40,7 @@ pamac/
 pulse/
 qpdfview/
 qt5ct/
+qt6ct/
 scripts/
 vlc/
 volumeicon/

@@ -121,34 +121,33 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     #family: 'Recursive Mono Casual Static' # No need for this one, use the Code one
-    #family: 'FiraCode Nerd Font'
-    #family: 'JetBrains Mono Nerd Font'
     #family: 'RecMonoCasual' # Code Recursive Font
+    # family: 'RecMonoCasual Nerd Font' # Code Recursive Font
     family: 'RecMonoCasual Nerd Font' # Code Recursive Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
 
   # Bold font face
-  #bold:
+  bold:
     #Font family:  'FiraCode Nerd Font'
     #
     # If the bold family is not specified, it will fall back to the value specified for the normal font.
-    #family: 'RecMonoCasual Nerd Font'
+    family: 'RecMonoCasual Nerd Font'
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold
+    style: Bold
 
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: 'Cartograph CF Italic'
 
     # The `style` can be specified to pick a specific face.
-    #style: Italic
+    style: Italic
 
   # Bold italic font face
   #bold_italic:

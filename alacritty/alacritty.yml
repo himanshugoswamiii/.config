@@ -123,7 +123,7 @@ font:
     #family: 'Recursive Mono Casual Static' # No need for this one, use the Code one
     #family: 'RecMonoCasual' # Code Recursive Font
     # family: 'RecMonoCasual Nerd Font' # Code Recursive Font
-    family: 'RecMonoCasual Nerd Font' # Code Recursive Font
+    family: 'Recursive Mono Casual Static' # Default Recursive Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -133,7 +133,7 @@ font:
     #Font family:  'FiraCode Nerd Font'
     #
     # If the bold family is not specified, it will fall back to the value specified for the normal font.
-    family: 'RecMonoCasual Nerd Font'
+    family: 'RecMonoCasual Nerd Font' # Default Recursive Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold

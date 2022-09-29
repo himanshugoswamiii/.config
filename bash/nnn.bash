@@ -1,11 +1,23 @@
 # -------------NNN File Manager----------------------
 
-export VISUAL=nvim
-# EDITOR will change the batch rename editor from nano to neovim
-export EDITOR=vim
+export NNN_OPTS="Aeo"  # Look at Program Options in the nnn Wiki
+# A : no dir auto-entering during filter
+# e : text in $VISUAL/$EDITOR/vi
+# o : Open files only on enter. Now `l` won't open files
+# x : Copy selection path to clipboard
+
+#export VISUAL=nvim
+export EDITOR=vim  # EDITOR will change the batch rename editor from nano to vim
 # export PDF=vim -- Find command for pdf opener
-# Here f is the key to open finder
-export NNN_PLUG='t:preview-tabbed;v:imgview' 
-export NNN_FCOLORS='c1e2252e006033f7c6d6abc4'
+
+# Here t is the key to open preview-tabbed
+export NNN_PLUG='t:preview-tabbed;v:imgview;w:wallpaper;y:x2sel'
 export NNN_COLORS="2136" # This will have different color for each 1, 2, 3, 4
-export NNN_FIFO=/tmp/nnn.fifo
+# export NNN_FIFO=/tmp/nnn.fifo
+# export NNN_TMPFILE='/home/himanshu/.config/nnn/.lastd' # always cd on quit
+
+# --- THEMES
+export NNN_FCOLORS='c1e2252e006033f7c6d6abc4'
+
+
+

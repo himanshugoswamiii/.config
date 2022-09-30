@@ -6,7 +6,7 @@ export NNN_OPTS="Aeo"  # Look at Program Options in the nnn Wiki
 # o : Open files only on enter. Now `l` won't open files
 # x : Copy selection path to clipboard
 
-#export VISUAL=nvim
+export VISUAL=nvim
 export EDITOR=vim  # EDITOR will change the batch rename editor from nano to vim
 # export PDF=vim -- Find command for pdf opener
 

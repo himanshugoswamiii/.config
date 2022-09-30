@@ -1,4 +1,6 @@
-{
+{    
+    "telemetry.telemetryLevel": "off",
+    "git.autoRepositoryDetection": false,
     "workbench.colorTheme": "Monokai",
     "editor.fontFamily": "'RecMonoCasual Nerd Font','Droid Sans Mono', 'monospace', monospace",
     "editor.fontSize": 14,
@@ -77,7 +79,7 @@
             "after": ["<","g","v"]
         }
     ],
-    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.autoUpdate": false,
     // Files that will be exclude from File Explorer
     "files.exclude": {
         "**/*.class": true
@@ -92,6 +94,8 @@
         "strings": "on"
     },
     "terminal.integrated.copyOnSelection": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "git.enabled": false,
+    "github.gitAuthentication": false
 }
 

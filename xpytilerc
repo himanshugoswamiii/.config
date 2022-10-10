@@ -27,6 +27,8 @@ ignoreWindows = name: "Wrapper-2.0"
                 name: "Thunderbird" !title: ".*Mozilla Thunderbird.*"
                 name: "Doublecmd" !title: "^Double Commander "
                 name: "jetbrains-pycharm" title: "(Confirm|Tip(p){0,1}|Settings)"
+                name: "Xfce4-appfinder"
+                name: "Obsidian"
 
 
 # Delay the auto-tiling when a new application was lauched and its name
@@ -152,49 +154,6 @@ maximizeWhenOneWindowLeft = True
 # -1: any modifier
 modifier = 80
 
-#  ----  MY KEY CODES ---
-# 10  1
-# 11  2
-# 12  3
-# 13  4
-# 14  5
-# 15  6
-# 16  7
-# 17  8
-# 18  9
-# 19  0
-# 50  Shift_L
-# 15  asciicircum
-# 50  Shift_L
-# 14  percent
-# 50  Shift_L
-# 10  exclam
-# 36  return
-# 38  a
-# 56  b
-# 54  c
-# 40  d
-# 26  e
-# 41  f
-# 42  g
-# 43  h
-# 31  i
-# 44  j
-# 45  k
-# 46  l
-# 58  m
-# 57  n
-# 32  o
-# 33  p
-# 24  q
-# 27  r
-# 39  s
-# 28  t
-# 30  u
-# 55  v
-# 25  w
-# 53  x
-# 29  y
 
 # toggle the status of the current desktop
 # whether to simultaneously resize docked windows
@@ -234,15 +193,18 @@ cycleTiler = 54
 
 # swap active window with the top most- / left- one
 # Default- 9: ESC
+# 36 : Enter
 swapWindows = 36
 
 # store the layout of the windows on the current desktop
 # 15: "6"
-storeCurrentWindowsLayout = 15
+# 39: "s"
+storeCurrentWindowsLayout = 39
 
 # restore the layout of the windows geometry on the current desktop
 # 14: "5"
-recreateWindowsLayout = 14
+# 27: "r"
+recreateWindowsLayout = 27
 
 # switch to tiler "masterAndStackVertic" and do the tiling
 # 10: "1"
@@ -256,16 +218,19 @@ tileVertically = 28
 
 # switch to tiler "masterAndStackHoriz" and do the tiling
 # 12: "3"
-tileMasterAndStackHorizontally = 12
+# 18: "9"
+tileMasterAndStackHorizontally = 18
 
 # switch to tiler "horizontally" and do the tiling
 # 13: "4"
-tileHorizontally = 13
+# 19: "0"
+tileHorizontally = 19
 
 # switch to tiler "maximize" and maximize the window
 # 19: "0"
+# 17: "8"
 # 58 "m" -- Don't use this use Window manager maximize 'Alt+f10'
-tileMaximize = 19
+tileMaximize = 17
 
 # increase max number of windows to tile
 # 58 "m" 
@@ -359,3 +324,48 @@ alreadyRunning_Summary = Tiling
 exit_Icon = /usr/share/icons/gnome/32x32/devices/video-display.png
 exit_Message = \-\- Exit \-\-
 exit_Summary = Tiling
+
+
+#  ----  MY KEY CODES ---
+# 10  1
+# 11  2
+# 12  3
+# 13  4
+# 14  5
+# 15  6
+# 16  7
+# 17  8
+# 18  9
+# 19  0
+# 50  Shift_L
+# 15  asciicircum
+# 50  Shift_L
+# 14  percent
+# 50  Shift_L
+# 10  exclam
+# 36  return
+# 38  a
+# 56  b
+# 54  c
+# 40  d
+# 26  e
+# 41  f
+# 42  g
+# 43  h
+# 31  i
+# 44  j
+# 45  k
+# 46  l
+# 58  m
+# 57  n
+# 32  o
+# 33  p
+# 24  q
+# 27  r
+# 39  s
+# 28  t
+# 30  u
+# 55  v
+# 25  w
+# 53  x
+# 29  y

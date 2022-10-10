@@ -41,6 +41,7 @@ qpdfview/
 qt5ct/
 qt6ct/
 scripts/
+sticky/
 vlc/
 volumeicon/
 xfce4/
@@ -54,6 +55,12 @@ VSCodium/User/*
 !VSCodium/User/settings.json
 !VSCodium/User/keybindings.json
 !VSCodium/User/snippets
+
+# qutebrowser
+qutebrowser/*
+!qutebrowser/bookmarks/
+!qutebrowser/config.py
+!qutebrowser/quickmarks
 
 # Files
 QtProject.conf

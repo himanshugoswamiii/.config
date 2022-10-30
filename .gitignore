@@ -58,9 +58,10 @@ VSCodium/User/*
 
 # qutebrowser
 qutebrowser/*
-!qutebrowser/bookmarks/
 !qutebrowser/config.py
-!qutebrowser/quickmarks
+
+# Steam
+cef_user_data/
 
 # Files
 QtProject.conf

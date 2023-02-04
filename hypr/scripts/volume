@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# ----------------------------------------------------------------------------------------------
+# speaker
+# ----------------------------------------------------------------------------------------------
+
+inc_volume() {
+	amixer -D pulse sset Master 5%+ && notify-send -u low "Volume Increased"
+}
+
+dec_volume() {
+	amixer -D pulse sset Master 5%- && notify-send -u low "Volume Decreased"
+}
+
+toggle_mute() {
+    amixer -D pulse sset Master toggle && notify-send -u low "Volume Muted"
+}
+
+# ----------------------------------------------------------------------------------------------
+
+if [[ "$1" == "--toggle" ]]; then
+    toggle_mute
+elif [[ "$1" == "--inc" ]]; then
+    inc_volume
+elif [[ "$1" == "--dec" ]]; then
+    dec_volume
+else
+    notify-send -u normal "Wrong: check hyprland.conf"
+fi

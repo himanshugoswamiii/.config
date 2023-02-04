@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+get_brightness() {
+    echo "100 * $(brightnessctl get) / $(brightnessctl max)" | bc
+}
+
+get_icon() {
+    level="$(get_brightness)"
+    if [[ "$level" -le "25" ]]; then
+        echo ""
+    elif [[ "$level" -le "50" ]]; then
+        echo ""
+    elif [[ "$level" -le "75" ]]; then
+        echo ""
+    else
+        echo ""
+    fi
+}
+
+notify_brightness() {
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "$(get_icon) $(get_brightness)"
+}
+
+inc_brightness() {
+    brightnessctl set 5%+ && notify_brightness
+}
+
+dec_brightness() {
+    brightnessctl set 5%- && notify_brightness
+}
+
+if [[ "$1" == "--level" ]]; then
+    get_brightness
+elif [[ "$1" == "--icon" ]]; then
+    get_icon
+elif [[ "$1" == "--inc" ]]; then
+    inc_brightness
+elif [[ "$1" == "--dec" ]]; then
+    dec_brightness
+fi

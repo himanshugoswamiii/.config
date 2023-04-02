@@ -1,2 +1,4 @@
-CompileFlags:
-  Add: ["-xc", "-std=c17", "-xc++", "-std=c++17"]
+"CompileFlags": {
+    "C": ["-xc", "-std=c17"],
+    "CXX": ["-xc++", "-std=c++17"]
+}

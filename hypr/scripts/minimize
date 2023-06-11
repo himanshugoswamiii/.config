@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+xdotool windowunmap $(xdotool getactivewindow)
+# Using this for minimze applications in hyprland
